@@ -1,10 +1,10 @@
 # Portfólio
 
-Bem-vindo ao meu portfólio! Aqui, você encontrará uma coleção dos meus projetos, habilidades e informações sobre mim.
+Bem-vindo ao meu portfólio! Aqui, você encontrará uma coleção dos meus projetos, habilidades e informações sobre mim. [link](https://eduardo-j-s.github.io/)
 
 ## Visão Geral
 
-Este é o meu site pessoal, criado para exibir meus projetos e habilidades como desenvolvedor. Você pode navegar pelas diferentes seções para saber mais sobre mim e meu trabalho. [link](https://eduardo-j-s.github.io/)
+Este é o meu site pessoal, criado para exibir meus projetos e habilidades como desenvolvedor. Você pode navegar pelas diferentes seções para saber mais sobre mim e meu trabalho.
 
 ## Navegação
 
