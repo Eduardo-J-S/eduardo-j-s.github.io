@@ -37,3 +37,8 @@
     font-weight: 500;
     margin: 2rem 0 1rem;
 }
+
+.skills .image-container img {
+    width: 8rem;
+    height: 3rem;
+}
