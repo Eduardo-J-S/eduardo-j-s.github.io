@@ -14,17 +14,14 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - name: Set up Node.js
+    - name: Checkout code
+      uses: actions/checkout@v2
+    
+    - name: Install Node.js
       uses: actions/setup-node@v3
       with:
         node-version: '16'
-        check-latest: true
-
-    - name: Checkout code
-      uses: actions/checkout@v2
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-
+    
     - name: Install NPM packages
       run: npm ci
     
