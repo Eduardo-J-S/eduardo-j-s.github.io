@@ -48,5 +48,21 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    },
+    "moduleNameMapper": {
+      "^@tsparticles/react$": "<rootDir>/node_modules/@tsparticles/react/dist/index.js",
+      "^@tsparticles/slim$": "<rootDir>/node_modules/@tsparticles/slim/esm/index.js"
+    }
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
   }
 }
