@@ -110,7 +110,7 @@ const Portfolio = () => {
                             onMouseEnter={()=>handlerHover(index)}
                             onMouseLeave={()=>handlerHover(null)}>
                                 <div className="portfolio__content__cards__item__img-wrapper">
-                                    <a>
+                                    <a href="#" role="button">
                                         <img src={item.image} alt={item.name} />
                                     </a>
                                 </div>
