@@ -77,8 +77,8 @@ const Portfolio = () => {
     function handleVisit(link) {
         window.open(link, '_blank');
     }
-    
-    function handlerHover(index){
+
+    function handlerHover(index) {
         setHoveredValue(index)
     }
 
@@ -106,11 +106,11 @@ const Portfolio = () => {
                 <div className="portfolio__content__cards">
                     {
                         filteredItems.map((item, index) => (
-                            <div className="portfolio__content__cards__item" key={`cardItem${item.name.trim()}`} 
-                            onMouseEnter={()=>handlerHover(index)}
-                            onMouseLeave={()=>handlerHover(null)}>
+                            <div className="portfolio__content__cards__item" key={`cardItem${item.name.trim()}`}
+                                onMouseEnter={() => handlerHover(index)}
+                                onMouseLeave={() => handlerHover(null)}>
                                 <div className="portfolio__content__cards__item__img-wrapper">
-                                    <a href="#" role="button">
+                                    <a href={item.link} target="_blank" rel="noopener noreferrer">
                                         <img src={item.image} alt={item.name} />
                                     </a>
                                 </div>
