@@ -1,5 +1,5 @@
 {
-  "homepage": "https://eduardo-j-s.github.io/deploy/",
+  "homepage": "https://eduardo-j-s.github.io/",
   "name": "deploy",
   "version": "0.1.0",
   "private": true,
@@ -8,6 +8,8 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.0.3",
     "rc-progress": "^3.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -17,6 +19,7 @@
     "react-simple-animate": "^3.5.2",
     "react-vertical-timeline-component": "^3.6.0",
     "sass": "^1.69.7",
+    "tsparticles": "^3.0.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
