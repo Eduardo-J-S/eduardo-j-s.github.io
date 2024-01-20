@@ -1,5 +1,5 @@
 {
-  "homepage": "https://eduardo-j-s.github.io/deploy",
+  "homepage": "https://eduardo-j-s.github.io/deploy/",
   "name": "deploy",
   "version": "0.1.0",
   "private": true,
@@ -20,9 +20,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "test": "cross-env REACT_APP_CUSTOM_OPTION=true react-scripts test",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -42,5 +42,20 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  }
   }
 }
