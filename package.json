@@ -1,5 +1,5 @@
 {
-  "homepage": "https://eduardo-j-s.github.io/deploy/",
+  "homepage": "https://eduardo-j-s.github.io/deploy",
   "name": "deploy",
   "version": "0.1.0",
   "private": true,
@@ -8,8 +8,6 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "@tsparticles/react": "^3.0.0",
-    "@tsparticles/slim": "^3.0.3",
     "rc-progress": "^3.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -19,13 +17,12 @@
     "react-simple-animate": "^3.5.2",
     "react-vertical-timeline-component": "^3.6.0",
     "sass": "^1.69.7",
-    "tsparticles": "^3.0.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "test": "cross-env REACT_APP_CUSTOM_OPTION=true react-scripts test",
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -44,25 +41,6 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
-  },
-  "jest": {
-    "testEnvironment": "node",
-    "transform": {
-      "^.+\\.js$": "babel-jest"
-    },
-    "moduleNameMapper": {
-      "^@tsparticles/react$": "<rootDir>/node_modules/@tsparticles/react/dist/index.js",
-      "^@tsparticles/slim$": "<rootDir>/node_modules/@tsparticles/slim/esm/index.js"
-    }
-  },
-  "babel": {
-    "presets": [
-      "@babel/preset-env",
-      "@babel/preset-react"
     ]
   }
 }
