@@ -1,4 +1,4 @@
-.home{
+.home {
     position: relative;
     height: 100%;
     display: flex;
@@ -6,11 +6,11 @@
     align-content: center;
     flex-direction: column;
 
-    &__text-wrapper{
+    &__text-wrapper {
         display: flex;
         justify-content: center;
 
-        h1{
+        h1 {
             color: var(--yellow-theme-main-color);
             margin: 0px;
             font-weight: 500;
@@ -23,12 +23,12 @@
         }
     }
 
-    &__contact-me{
+    &__contact-me {
         display: flex;
         justify-content: center;
         margin-top: 15px;
 
-        button{
+        button {
             cursor: pointer;
             padding: 10px 70px;
             font-size: 2rem;
@@ -38,7 +38,7 @@
             border-radius: 4px;
             font-weight: 500;
 
-            &:hover{
+            &:hover {
                 background: var(--yellow-theme-main-color);
                 color: #000000;
             }
@@ -47,31 +47,27 @@
 }
 
 @media only screen and (max-width: 550px) {
-    .home__text-wrapper h1{
+    .home__text-wrapper h1 {
         font-size: 3rem;
         line-height: 5rem;
-
     }
 }
 
 @media only screen and (min-width: 551px) and (max-width: 768px) {
-    .home__text-wrapper h1{
+    .home__text-wrapper h1 {
         font-size: 4rem;
         line-height: 6rem;
-
-        
     }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 990px) {
-    .home__text-wrapper h1{
+    .home__text-wrapper h1 {
         font-size: 6rem;
         line-height: 8rem;
-        
     }
 }
 
-@keyframes typingEffectAnimation{
+@keyframes typingEffectAnimation {
     from {
         width: 0;
     }
