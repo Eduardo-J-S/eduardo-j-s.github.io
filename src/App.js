@@ -1,32 +1,24 @@
-import './App.scss';
-import { Routes, Route } from 'react-router-dom';
-import Home from './containers/home';
-import About from './containers/about';
-import Resume from './containers/resume';
-import Skills from './containers/skills';
-import Portfolio from './containers/portfolio';
-import Contact from './containers/contact';
-import Navbar from './components/navBar';
+import React from 'react';
+import Navbar from './components/navbar/Navbar'
+import Header from './containers/header/Header';
+import About from './containers/about/About';
+import Skills from './containers/skills/Skills';
+import Contact from './containers/contact/Contact';
+import Projects from './containers/projects/Projects';
+import Sobre from './components/sobre/Sobre'
 
-function App() {
-  
+const App = () => {
   return (
-    <div className="App">
-      {/* navbar */}
+    <div>
       <Navbar />
-      {/* main page content*/}
-      <div className='App__main-page-content'>
-        <Routes>
-          <Route index path="" element={<Home />} />
-          <Route index path="/about" element={<About />} />
-          <Route index path="/resume" element={<Resume />} />
-          <Route index path="/skills" element={<Skills />} />
-          <Route index path="/portfolio" element={<Portfolio />} />
-          <Route index path="/contact" element={<Contact />} />
-        </Routes>
-      </div>
+      <Header />
+      <About />
+      {/* <Sobre /> */}
+      <Skills />
+      <Projects />
+      <Contact />
     </div>
   );
-}
+};
 
 export default App;

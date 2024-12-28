@@ -1,0 +1,69 @@
+$primary-color: #2a2a3c;
+$text-color: #fff;
+$secondary-color: #aaa;
+
+.header {
+  padding: 5rem;
+  background-color: $primary-color;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    gap: 1rem; 
+    margin: 0 auto;
+    max-width: 950px;
+  }
+
+  &__text {
+    text-align: center;
+
+    h1 {
+      font-size: 3rem;
+      color: $text-color;
+      margin: 0;
+    }
+
+  }
+
+  &__logo {
+    height: 250px; 
+    width: auto;
+    transition: max-width 0.3s ease;
+  }
+
+  @media (max-width: 768px) { 
+    &__logo {
+      max-width: 270px; 
+    }
+
+    &__text h1 {
+      font-size: 2rem; 
+    }
+
+    &__text &__tagline { // Substitua esta linha
+      font-size: 1rem; 
+    }
+  }
+
+  @media (max-width: 480px) { 
+    &__logo {
+      max-width: 80px; 
+    }
+
+    &__text h1 {
+      font-size: 1.5rem;
+    }
+
+    &__tagline { // Corrigido aqui também
+      font-size: 0.9rem;
+    }
+  }
+}
+
+
+.header__tagline {
+  font-size: 1.2rem;
+  color: $secondary-color; // cor vermelha aplicada aqui
+  margin-top: 5px; 
+}
