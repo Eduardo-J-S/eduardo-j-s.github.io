@@ -5,7 +5,6 @@ import About from './containers/about/About';
 import Skills from './containers/skills/Skills';
 import Contact from './containers/contact/Contact';
 import Projects from './containers/projects/Projects';
-import Sobre from './components/sobre/Sobre'
 
 const App = () => {
   return (
@@ -13,7 +12,6 @@ const App = () => {
       <Navbar />
       <Header />
       <About />
-      {/* <Sobre /> */}
       <Skills />
       <Projects />
       <Contact />

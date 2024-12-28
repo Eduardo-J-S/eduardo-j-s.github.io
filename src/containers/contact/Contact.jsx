@@ -22,10 +22,8 @@ const Contact = () => {
                         <a href="https://www.instagram.com/seu-usuario" target="_blank" rel="noopener noreferrer">
                             <i className="fab fa-instagram"></i>
                         </a>
-                        <ReactWhatsapp number="+55 81988692798" className="contact__social" message="Olá, estou interessado em contratar seus serviços. Vamos conversar?">
-                            <a href="#">
+                        <ReactWhatsapp number="+55 81988692798" className="contact__whatsapp" message="Olá, estou interessado em contratar seus serviços. Vamos conversar?">
                                 <i className="fab fa-whatsapp"></i>
-                            </a>
                         </ReactWhatsapp>
                     </div>
 
