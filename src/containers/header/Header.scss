@@ -5,6 +5,7 @@ $secondary-color: #aaa;
 .header {
   padding: 5rem;
   background-color: $primary-color;
+  margin-top: 20px;
 
   &__container {
     display: flex;
@@ -19,51 +20,27 @@ $secondary-color: #aaa;
     text-align: center;
 
     h1 {
-      font-size: 3rem;
+      font-size: clamp(1.5rem, 5vw, 3rem); // Mínimo: 1.5rem, máximo: 3rem, ajusta com 5% da largura da tela
       color: $text-color;
       margin: 0;
+      max-width: 1260px; // Limita o tamanho máximo em telas grandes
+      min-width: 80px; 
     }
 
   }
 
   &__logo {
-    height: 250px; 
-    width: auto;
-    transition: max-width 0.3s ease;
+    width: 30%; // A largura da imagem será proporcional ao container
+    height: auto; // Garante que a altura seja ajustada proporcionalmente
+    max-width: 250px; // Limita o tamanho máximo em telas grandes
+    min-width: 80px; // Limita o tamanho mínimo em telas pequenas
+    transition: all 0.3s ease; // Adiciona suavidade na transição de tamanho
   }
 
-  @media (max-width: 768px) { 
-    &__logo {
-      max-width: 270px; 
-    }
-
-    &__text h1 {
-      font-size: 2rem; 
-    }
-
-    &__text &__tagline { // Substitua esta linha
-      font-size: 1rem; 
-    }
-  }
-
-  @media (max-width: 480px) { 
-    &__logo {
-      max-width: 80px; 
-    }
-
-    &__text h1 {
-      font-size: 1.5rem;
-    }
-
-    &__tagline { // Corrigido aqui também
-      font-size: 0.9rem;
-    }
-  }
 }
 
-
 .header__tagline {
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 3vw, 1.5rem); // Ajusta dinamicamente com o tamanho da viewport
   color: $secondary-color; // cor vermelha aplicada aqui
   margin-top: 5px; 
 }

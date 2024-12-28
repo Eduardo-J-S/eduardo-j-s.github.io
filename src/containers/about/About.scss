@@ -1,5 +1,5 @@
 .about {
-    background: #292939;
+    background: #1e1e2f;
     color: #fff;
     padding: 4rem 2rem;
     
@@ -25,7 +25,7 @@
         display: flex;
 
         h2 {
-            font-size: 2rem;
+            font-size: clamp(1.5rem, 4vw, 2.5rem); // Título responsivo
             margin-bottom: 1rem;
         }
 
@@ -33,7 +33,7 @@
             margin-bottom: 1rem;
             line-height: 1.6;
             margin: 0 auto;
-            font-size: 1rem;
+           font-size: clamp(0.9rem, 2.5vw, 1.2rem); // Ajusta o texto da descrição
         }
         
 

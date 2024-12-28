@@ -10,12 +10,12 @@
   }
 
   &__title {
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 5vw, 3rem); // Mínimo: 1.5rem, máximo: 3rem, ajusta com 5% da largura da tela
     margin-bottom: 0.5rem;
   }
 
   &__subtitle {
-    font-size: 1rem;
+    font-size: clamp(0.9rem, 2.5vw, 1.2rem);
     color: #b0b0b0;
     margin-bottom: 2rem;
   }
