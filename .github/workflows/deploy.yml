@@ -15,10 +15,10 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: Install Node.js
-      uses: actions/setup-node@v1
+      uses: actions/setup-node@v3
       with:
         node-version: 16
 
@@ -41,6 +41,9 @@ jobs:
     if: github.ref == 'refs/heads/main'
 
     steps:
+    - name: Checkout code
+      uses: actions/checkout@v3 # Necessário para baixar o código
+      
     - name: Download artifact
       uses: actions/download-artifact@v3 # Updated from v2 to v3
       with:
