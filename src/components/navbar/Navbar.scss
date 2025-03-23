@@ -10,7 +10,15 @@
   align-items: center;
   z-index: 1000;
 
-  ul {
+  &__logo {
+    color: white;
+    font-size: 1.5rem;
+    width: 100px;
+    height: auto;
+    font-weight: bold;
+  }
+
+  &__menu {
     list-style: none;
     display: flex;
     margin: 0;
@@ -33,6 +41,58 @@
           color: #1e1e2f;
         }
       }
+    }
+  }
+
+  /* Ícone do Menu Hambúrguer */
+  &__toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+
+    span {
+      background: white;
+      height: 3px;
+      width: 30px;
+      margin: 5px 0;
+      transition: 0.3s;
+    }
+  }
+
+  /* Estilos para telas menores */
+  @media (max-width: 768px) {
+    &__toggle {
+      display: flex;
+    }
+
+    &__menu {
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 200px;
+      background-color: #1e1e2f;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      padding: 1rem;
+      display: none;
+    }
+
+    &__menu.active {
+      display: flex;
+    }
+
+    /* Animação do ícone hambúrguer */
+    &__toggle.open span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    &__toggle.open span:nth-child(2) {
+      opacity: 0;
+    }
+
+    &__toggle.open span:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
     }
   }
 }

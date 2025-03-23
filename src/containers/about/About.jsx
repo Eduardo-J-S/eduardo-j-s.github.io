@@ -9,9 +9,9 @@ const About = () => {
         <div className="about__grid">
           <h2>Bem-vindo!</h2>
           <p className="about__grid__description">
-          Sou um desenvolvedor fullstack com paixão por criar soluções modernas e funcionais.
+          Sou um desenvolvedor backend com paixão por criar soluções modernas e funcionais.
           Combinando criatividade com conhecimento técnico, dou vida às suas ideias, entregando 
-          soluções digitais que se destacam tanto em design quanto em desempenho. Minha experiência 
+          soluções digitais que se destacam em desempenho. Minha experiência 
           abrange desde o desenvolvimento backend até a criação de interfaces intuitivas, garantindo 
           uma abordagem completa para a construção de sistemas robustos.
           </p>

@@ -3,14 +3,16 @@ $text-color: #fff;
 $secondary-color: #aaa;
 
 .header {
-  padding: 5rem;
+  padding: 6rem;
   background-color: $primary-color;
-  margin-top: 20px;
+  margin-top: 56px;
 
   &__container {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: center; 
+    text-align: center;
     gap: 1rem; 
     margin: 0 auto;
     max-width: 950px;
@@ -43,4 +45,27 @@ $secondary-color: #aaa;
   font-size: clamp(1rem, 3vw, 1.5rem); // Ajusta dinamicamente com o tamanho da viewport
   color: $secondary-color; // cor vermelha aplicada aqui
   margin-top: 5px; 
+}
+
+.header__highlight {
+  color: #00bfff; // Um leve destaque dourado
+  font-weight: bold;
+  position: relative;
+}
+
+.header__highlight::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #00bfff;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.header__highlight:hover::after {
+  transform: scaleX(1);
 }

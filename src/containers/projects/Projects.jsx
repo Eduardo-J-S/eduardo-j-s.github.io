@@ -6,6 +6,11 @@ import relogioDePontoImage from '../../assets/images/relogio-de-ponto.png';
 import encurtadorDeUrl from '../../assets/images/link.png';
 import apiProdutos from '../../assets/images/gestao-de-produtos.png';
 import webProdutos from '../../assets/images/online-shop.png';
+import appProdutos from '../../assets/images/desenvolvimento-de-aplicativos.png'
+import machineLearning from '../../assets/images/ciencia-de-dados.png'
+import chatbot from '../../assets/images/chatbot.png'
+import teachingPlatform from '../../assets/images/tutor.png'
+import devBooks from '../../assets/images/e-books.png'
 
 const Projects = () => {
   const projects = [
@@ -36,31 +41,31 @@ const Projects = () => {
     {
       title: 'Aplicação Mobile de Produtos',
       description: 'O aplicativo móvel Products é um projeto frontend desenvolvido para interagir com a API de Produtos. Ele fornece uma interface amigável para gerenciar produtos, incluindo funcionalidades para criar, atualizar, listar e excluir produtos. O aplicativo é construído usando React Native e se integra à API de Produtos para buscar e manipular dados de produtos.',
-      image: webProdutos,
+      image: appProdutos,
       githubLink: 'https://github.com/Eduardo-J-S/product-management-app',
     },
     {
       title: 'Previsão de Churn de Clientes',
       description: 'Este projeto aplica técnicas de Machine Learning para prever quais clientes estão em risco de abandonar os serviços de uma empresa de telecomunicações. Utilizando algoritmos como Random Forest, Gradient Boosting e Support Vector Machines, o modelo foi treinado para identificar padrões no comportamento dos clientes e prever o churn.',
-      image: relogioDePontoImage,
+      image: machineLearning,
       githubLink: 'https://github.com/Eduardo-J-S/mineracao-dados',
     },
     {
       title: 'ChatBot Distribuído',
       description: 'Este é um projeto de sistemas distribuídos composto por uma aplicação de cliente em Flask (Python) e um servidor em Flask também (Python), ambos contidos em contêineres Docker, e um serviço de proxy Nginx para facilitar a comunicação entre o cliente e o servidor.',
-      image: relogioDePontoImage,
+      image: chatbot,
       githubLink: 'https://github.com/Eduardo-J-S/chatbot-sd',
     },
     {
       title: 'Plataforma de Ensino - Aprender Mais',
       description: 'O Aprender Mais é uma iniciativa desenvolvida como parte da disciplina de Desenvolvimento Web II (BackEnd). Nosso objetivo é criar uma plataforma de educação online inovadora que promova o acesso gratuito a aulas postadas pela plataforma através de adminstradores voluntários em diversas áreas de conhecimento.',
-      image: relogioDePontoImage,
+      image: teachingPlatform,
       githubLink: 'https://github.com/Eduardo-J-S/AprenderMais-BackEnd',
     },
     {
       title: 'DevBooks',
       description: 'O "DevBooks" é um projeto de FrontEnd desenvolvido como parte da cadeira de Desenvolvimento Web I no curso de graduação em Análise e Desenvolvimento de Sistemas. Trata-se de um site voltado para desenvolvedores, no qual os usuários podem pesquisar por livros relacionados à área de desenvolvimento e obter informações detalhadas, incluindo preço e locais de venda no Google. Além disso, o site oferece recursos adicionais para usuários autenticados, permitindo que criem e acessem suas contas personalizadas, tornando a experiência de pesquisa e interação mais personalizada e agradável.',
-      image: relogioDePontoImage,
+      image: devBooks,
       githubLink: 'https://github.com/Eduardo-J-S/DSWI',
     }
     
